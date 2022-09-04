@@ -58,8 +58,8 @@ function drawCheckRightAnswer () {
 // отрисовка галочек
 drawCheckDarkTheme ();
 drawCheckRightAnswer ();
-// кнопки обратной связи
 
+// кнопки обратной связи
 get("VK").onclick = function () {
   window.open ('https://vk.com/histduel');
 };
