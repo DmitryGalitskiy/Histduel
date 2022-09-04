@@ -1,0 +1,261 @@
+@font-face {
+    font-family: fontText; 
+    src: url("../font/Roboto-Regular.ttf"); 
+}
+
+@font-face {
+    font-family: fontButton; 
+    src: url("../font/Roboto-Medium.ttf");
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: fontText;
+    background-color:#EFEFF1;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    min-height: 600px;;
+    max-width:500px;
+    background-color: white;
+    color: #515151;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    user-select: none;
+}
+
+/* основная часть */
+#containerButton{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textChoosePerson {
+    font-family: fontButton; 
+    border-bottom: 1px solid #EBEBEB;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 5px auto;
+}
+
+.containerSwitch {
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#switchRightAnswer{
+    background-image: url("../images/check.svg");
+    background-color: rgb(109, 176, 255);
+}
+
+.textSwitch {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.switch {
+    height: 22px;
+    width: 22px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #6DB0FF;
+}
+
+#resetDataButton{
+    font-family: fontButton; 
+    width: 200px;
+    font-size: 1em;
+    height: 20px;
+    text-align: center;
+    color: white;
+    background-color: #6DB0FF;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto;
+}
+
+#containerOptions{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#textOption{
+    text-align: center;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+#textEmail{
+    font-family: fontButton; 
+    user-select: text;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.button{
+    font-family: fontButton; 
+    background-color: #0077FF;
+    line-height: 50px;
+    margin: auto;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#Feedback{
+    background-color: #FF6736;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+}
+
+/* окно подтверждения очистки данных */
+dialog {
+    color: #515151;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 15px;
+    max-width:300px;
+    background-color:white;
+    margin-top: auto; /* 15em */
+    margin-bottom: auto;
+}
+
+#buttonYes {
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+    padding-top: 0.5em;
+    border: 2px solid #6DB0FF;
+    cursor: pointer;
+}
+
+#buttonYes:hover {
+    color: white;
+    background-color: #6DB0FF;
+}
+
+#buttonNo {
+    font-family: fontButton; 
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+    padding-top: 0.5em;
+    color:white;
+    background-color: #6DB0FF;
+    border: 2px solid #6DB0FF;
+    cursor: pointer;
+}
+
+#windowUpText {
+    text-align: center;
+    height: 30px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* меню */
+#menu {
+    background-color:white;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    box-shadow: 0px -3px 15px rgb(230, 230, 230);
+}
+
+.buttonMenu {
+    color: #6DB0FF;
+    height: 65px;
+    width: 65px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgMenu{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin: auto;
+}
+#testshadow{
+    box-shadow: 0px 5px 10px rgb(109 176 255);
+}
+#imgDuel{
+    background-image: url(../images/icons/swordsDisable.svg);
+}
+#imgDuel:hover{
+    background-image: url(../images/icons/swords.svg);
+}
+#imgPersons{
+    background-image: url(../images/icons/personsDisable.svg);
+}
+#imgPersons:hover{
+    background-image: url(../images/icons/persons.svg);
+}
+#imgStat{
+    background-image: url(../images/icons/statisticsDisable.svg);
+}
+#imgStat:hover{
+    background-image: url(../images/icons/statistics.svg);
+}
+#imgOption{
+    background-image: url(../images/icons/option.svg);
+}
+
+/* изменение элементов для разных разрешений экрана */
+@media (min-height: 2160px) {
+    .wrapper {
+        height: 1600px;
+    }
+}
+
+@media (max-width: 355px) {
+    .textSwitch{
+        font-size: 0.9em;
+    }
+    .containerSwitch{
+        width: 280px;
+    }
+}

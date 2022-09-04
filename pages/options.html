@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Историческая дуэль</title>
+  <link href="../styles/cookieAlert.css" type="text/css" rel="stylesheet">
+  <link href="../styles/options.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+ </head>
+<body>
+    <div class = 'wrapper'>
+        <div id = "containerButton">
+            <div class = "textChoosePerson">Настройки</div>
+            <div class = "containerSwitch">
+                <div class = "textSwitch">Тёмная тема</div>
+                <div class = "switch" id = "switchDarkTheme"></div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "textSwitch">Показывать правильные ответы</div>
+                <div class = "switch" id = "switchRightAnswer"></div>
+            </div>
+            <div id = "resetDataButton">Очистить все данные</div>
+        </div>
+        <div id = "containerOptions">
+            <div class = "textChoosePerson">Обратная связь</div>
+            <div id = "textOption">
+                Вы можете оставить отзыв, сообщить о проблеме и поддержать развитие проекта
+            </div>
+            <div class="button" id = "VK">Группа Вконтакте</div>
+             <div id = "textOption">
+                Ответьте всего на 5 вопросов, чтобы сделать «Историческую дуэль» лучше
+            </div>
+            <div class="button" id = "Feedback">Пройти опрос</div>
+            <div id = "textOption">
+                Почта для обратной связи
+            </div>
+            <div id = "textEmail">
+                support@histduel.ru
+            </div>
+        </div>
+        <div id = "menu">
+             <div class = "buttonMenu" id = "buttonDuel">
+                  <div class = "imgMenu" id = "imgDuel"></div>Дуэль
+             </div>
+            <div class = "buttonMenu" id = "buttonPersons">
+                 <div class = "imgMenu" id = "imgPersons"></div>Персонажи
+            </div>
+            <div class = "buttonMenu" id = "buttonStatistic">
+                <div class = "imgMenu" id = "imgStat"></div>Статистика
+                </div>
+            <div class = "buttonMenu" id = "buttonOptions">
+                <div class = "imgMenu" id = "imgOption"></div>Настройки
+            </div>
+        </div>
+        <dialog id = "windowUp">
+            <div id = "windowUpText"> Очистить данные?</div>
+            <div id="buttonYes">Да</div>
+            <div id="buttonNo">Нет</div>
+        </dialog>
+        
+        <div id="cookieNotification">
+            <div id="cookieNotificationHeader">Мы используем Яндекс Метрику</div>
+            <div id="cookieNotificationBody">
+                <a id="more">Подробнее</a>
+            </div>
+            <button id="cookieButtonAgree">Я согласен</button>
+        </div>
+
+    </div>
+    <script src = "../script/cookieAlert.js"></script>
+    <script src = "../script/options.js"></script>
+</body>
+</html>

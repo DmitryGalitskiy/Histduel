@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Историческая дуэль</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="styles/start.css" type="text/css" rel="stylesheet">
+  <link href="styles/cookieAlert.css" type="text/css" rel="stylesheet">
+ </head>
+<body>
+	<div class = 'wrapper'>
+        <div id = "containerOptions">
+            <div class = "textChoosePerson">Выбранные темы</div>
+            <div class = "containerSwitch">
+                <div class = "tag" id="tagOge">OГЭ</div>
+                <div class = "textSwitch">Древность и Средневековье</div>
+                <div class = "switch" id = "switchMiddleAgeOge"></div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag" id="tagOge">OГЭ</div>
+                <div class = "textSwitch">Новое время</div>
+                <div class = "switch" id = "switchModernTimesOge"></div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag">ЕГЭ</div>
+                <div class = "textSwitch">Древность и Средневековье</div>
+                <div class = "switch" id = "switchMiddleAgeEge"></div>
+                </div>
+            <div class = "containerSwitch">
+                <div class = "tag">ЕГЭ</div>
+                <div class = "textSwitch">Новое время</div>
+                <div class = "switch" id = "switchModernTimesEge"></div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag">ЕГЭ</div>
+                <div class = "textSwitch"> Новейшая история</div>
+                <div class = "switch" id = "switchRecentHistoryEge"></div>
+            </div>
+        </div>
+        <div id = "containerCharacters">
+        <div class = "textChoosePerson">Выбранные персонажи</div>
+        <div id = "containerPersons">
+            <div id = "hero"></div>
+            <div id = "enemy"></div>
+        </div>
+        </div>
+    <div id = "containerPlayButton">Дуэль</div>
+        <div id = "menu">
+            <div class = "buttonMenu" id = "buttonDuel">
+                <div class = "imgMenu" id = "imgDuel"></div>Дуэль
+            </div>
+            <div class = "buttonMenu" id = "buttonPersons">
+                <div class = "imgMenu" id = "imgPersons"></div>Персонажи
+            </div>
+            <div class = "buttonMenu" id = "buttonStatistic">
+                <div class = "imgMenu" id = "imgStat"></div>Статистика
+            </div>
+            <div class = "buttonMenu" id = "buttonOptions">
+                <div class = "imgMenu" id = "imgOption"></div>Настройки
+            </div>
+        </div>
+        <dialog id = "windowUp">
+            <div id = "windowUpText">Выберите тему</div>
+            <div id="closeButton">Хорошо</div>
+        </dialog>
+        <div id="cookieNotification">
+            <div id="cookieNotificationHeader">Мы используем Яндекс Метрику</div>
+            <div id="cookieNotificationBody">
+                <a id="more">Подробнее</a>
+            </div>
+            <button id="cookieButtonAgree">Я согласен</button>
+        </div>
+	</div>
+<script src = "script/cookieAlert.js"></script>
+<script src = "script/start.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+@font-face {
+    font-family: fontText; 
+    src: url("../font/Roboto-Regular.ttf"); 
+}
+
+@font-face {
+    font-family: fontButton; 
+    src: url("../font/Roboto-Medium.ttf");
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: fontText;
+    background-color:#EFEFF1;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    min-height: 600px;;
+    max-width:500px;
+    background-color: white;
+    color: #515151;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    user-select: none;
+}
+
+/* основная часть */
+#containerOptions{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.containerSwitch {
+    width: 320px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.textSwitch {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.tag {
+    text-align: center;
+    height: 25px;
+    width: 45px;
+    border-radius: 15px;
+    color: white;
+    background-color:#FF6736;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+#tagOge{
+    background-color:#FFBB02;
+}
+
+.switch {
+    height: 22px;
+    width: 22px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #6DB0FF;
+    border: 2px solid #6DB0FF;
+}
+
+#containerPersons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+.textChoosePerson {
+    font-family: fontButton;
+    border-bottom: 1px solid #EBEBEB;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 5px auto;
+}
+
+#containerPlayButton{
+    font-family: fontButton;
+    margin: auto;
+    width: 90%;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    background-color: #e63326;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#hero {
+    width:200px;
+    height: 200px;
+    background-size: cover;
+    margin: auto;
+}
+
+#enemy{
+    width:200px;
+    height: 200px;
+    background-size: cover;
+    margin: auto;
+}
+
+#containerCharacters{
+    border-radius: 2px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+}
+
+/* окно ошибки */
+dialog {
+    font-size: 1.1em;
+    border: none;
+    border-radius: 15px;
+    max-width:300px;
+    color: #515151;
+    background-color:white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#closeButton {
+    font-family: fontButton; 
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+    padding-top: 0.5em;
+    color: white;
+    background-color: #6DB0FF;
+    cursor: pointer;
+}
+
+#windowUpText {
+    text-align: center;
+    height: 30px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* меню */
+#menu {
+    background-color:white;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    box-shadow: 0px -3px 15px rgb(230, 230, 230);
+}
+
+.buttonMenu {
+    color: #6DB0FF;
+    height: 65px;
+    width: 65px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgMenu{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin: auto;
+}
+
+#imgDuel{
+    background-image: url(../images/icons/swords.svg);
+}
+#imgPersons{
+    background-image: url(../images/icons/personsDisable.svg);
+}
+#imgPersons:hover{
+    background-image: url(../images/icons/persons.svg);
+}
+#imgStat{
+    background-image: url(../images/icons/statisticsDisable.svg);
+}
+#imgStat:hover{
+    background-image: url(../images/icons/statistics.svg);
+}
+#imgOption{
+    background-image: url(../images/icons/optionDisable.svg);
+}
+#imgOption:hover{
+    background-image: url(../images/icons/option.svg);
+}
+
+/* изменение элементов для разных разрешений экрана */
+@media (min-height: 2160px) {
+    .wrapper {
+        height: 1600px;
+    }
+}
+
+@media (max-height: 680px) {
+    #hero, #enemy {
+        width:180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 355px) {
+    #hero, #enemy {
+        width: 150px;
+        height: 150px;
+    }
+    .containerSwitch{
+        width: 265px;
+    }
+    .textSwitch{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 356px) and (max-width: 410px) {
+    #hero, #enemy{
+        width: 175px;
+        height: 175px;
+    }
+}

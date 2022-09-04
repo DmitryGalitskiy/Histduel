@@ -1,0 +1,323 @@
+@font-face {
+    font-family: fontText; 
+    src: url("../font/Roboto-Regular.ttf"); 
+}
+
+@font-face {
+    font-family: fontButton; 
+    src: url("../font/Roboto-Medium.ttf");
+}
+
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: fontText;
+    background-color:#EFEFF1;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    min-height: 600px;;
+    max-width:500px;
+    background-color: white;
+    color: #515151;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    user-select: none;
+}
+
+.battle{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* отрисовка полосок жизней */
+.liveContainer {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.liveBack {
+    background:#7E2B0D;
+    width: 180px; /* 200px */
+    height: 25px;
+}
+
+.liveFront {
+    background:#DB150D;
+    width:60%;
+    height: 100%;
+}
+
+.liveNumber{
+    font-family: fontButton;
+    color: white;
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.liveContainerEnemy {
+    margin-left: auto;
+}
+
+#liveBackEnemy {
+    margin-left: auto;
+}
+
+/* цифры урона */
+#damageContainer{
+    font-family: fontButton;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.damage {
+    width: 50%;
+    height: 25px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+}
+
+#damageEnemy{
+    margin-left: auto;
+}
+
+/* битва */
+.battleContainer{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.hero{
+    width: 200px;
+    max-height: 200px;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+}
+
+.enemy{
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/enemy.png);
+    background-size: cover;
+}
+
+.hit{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.damage{
+    transition: all 1s;
+}
+
+/* вопрос и ответы */
+#question{
+    font-family: fontButton;
+    height: 16%;
+    padding: 1.5em 20px 1.5em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.answer{
+    height: 8.75%;
+    padding-top: 2em;
+    text-align: center;
+    border-top: 1px solid #C3C3C3;
+    cursor: pointer;
+}
+
+/* кнопка паузы */
+#buttonPauseContainer {
+    height: 25px;
+    width: 100%;
+}
+
+#buttonPause {
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    background-image: url(../images/pause.svg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* окно с результатом */
+#windowUpResult {
+    color: #515151;
+    border: none;
+    width:240px;
+    height:300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#titleResult{
+    color: white;
+    font-size: 2.3em;
+    text-align: center;
+    height:72px;
+    background-image: url(../images/ribbon.png);
+    background-size: cover;
+}
+
+#percentageRightAnswers{
+    text-align: center;
+    height:20px;
+    margin-top: 5px;
+}
+
+#stars{
+    color: #FF6736;
+    text-align: center;
+    font-size: 3em;
+}
+
+#winText{
+    text-align: center;
+    height:20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#buttonMenu{
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    height:20px;
+    width: 160px;
+    border: 2px solid #6DB0FF;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#buttonMenu:hover{
+    font-family: fontButton; 
+    color: white;
+    background-color: #6DB0FF;
+}
+
+#buttonRepeat{
+    font-family: fontButton; 
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    height:20px;
+    width: 160px;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    background-color: #6DB0FF;
+    border: 2px solid #6DB0FF;
+    cursor: pointer;
+}
+
+/* меню паузы */
+#windowUp {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    border: none;
+    max-width:300px;
+    border-radius: 15px;
+    background-color:white;
+    user-select: none;
+}
+
+#closeButton {
+    font-family: fontButton; 
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    height: 30px;
+    color:white;
+    background-color: #6DB0FF;
+    border: 2px solid #6DB0FF;
+    cursor: pointer;
+}
+
+#windowUpText {
+    text-align: center;
+    height: 40px;
+}
+
+#goStartButton{
+    border-radius: 20px;
+    padding-top: 10px;
+    text-align: center;
+    height: 30px;
+    border: 2px solid #6DB0FF;
+    cursor: pointer;
+}
+
+#goStartButton:hover {
+    font-family: fontButton; 
+    color: white;
+    background-color: #6DB0FF;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* изменение элементов для разных разрешений экрана */
+@media (max-width: 360px) {
+    .liveBack, .liveNumber {
+        width: 140px;
+    }
+    .hero, .enemy, .hit {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+    .liveBack, .liveNumber {
+        width: 160px;
+    }
+    .hero, .enemy, .hit {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+  @media (min-height: 2160px) {
+    .wrapper {
+        height: 1600px;
+    }
+}

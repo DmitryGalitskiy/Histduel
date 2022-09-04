@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Историческая дуэль</title>
+  <link href="../styles/cookieAlert.css" type="text/css" rel="stylesheet">
+  <link href="../styles/statistics.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+ </head>
+<body>
+    <div class = 'wrapper'>
+        <div id = "containerButton">
+            <div class = "innerContainer">
+                <div class = "number" id = "numberAllGame"></div>
+                <div class = "textGame">Всего игр</div>
+            </div>
+            <div class = "innerContainer" id = "containerWinGame">
+                <div class = "number" id = "numberrWinGame"></div>
+                <div class = "textGame">Выиграно</div>
+            </div>
+            <div class = "innerContainer">
+                <div class = "number" id = "numberPercentWinGame"></div>
+                <div class = "textGame">Побед</div>
+            </div>
+        </div>
+        <div id = "containerOptions">
+            <div class = "text">Правильные ответы</div>
+            <div class = "containerSwitch">
+                <div class = "tag" id="tagOge">OГЭ</div>
+                <div class = "bigContainer">
+                    <div class="containerText">
+                        <div class = "textSwitch">Древность и Средневековье</div>
+                        <div class = "switch" id = "MiddleAgeOge"`></div>
+                    </div>
+                    <div class = "statBack">
+                        <div class = "statFront" id = "MiddleAgeOgeFront"></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag" id="tagOge">OГЭ</div>
+                <div class = "bigContainer">
+                    <div class="containerText">
+                        <div class = "textSwitch">Новое время</div>
+                        <div class = "switch" id = "ModernTimesOge"></div>
+                    </div>
+                    <div class = "statBack">
+                        <div class = "statFront" id = "ModernTimesOgeFront"></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag">ЕГЭ</div>
+                <div class = "bigContainer">
+                    <div class="containerText">
+                        <div class = "textSwitch">Древность и Средневековье</div>
+                        <div class = "switch" id = "MiddleAgeEge"`></div>
+                    </div>
+                    <div class = "statBack">
+                        <div class = "statFront" id = "MiddleAgeEgeFront"></div>
+                    </div>
+                </div>    
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag">ЕГЭ</div>
+                <div class = "bigContainer">
+                    <div class="containerText">
+                        <div class = "textSwitch">Новое время</div>
+                        <div class = "switch" id = "ModernTimesEge"></div>
+                    </div>
+                    <div class = "statBack">
+                        <div class = "statFront" id = "ModernTimesEgeFront"></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "containerSwitch">
+                <div class = "tag">ЕГЭ</div>
+                <div class = "bigContainer">
+                    <div class="containerText">
+                        <div class = "textSwitch"> Новейшая история</div>
+                        <div class = "switch" id = "RecentHistory"></div>
+                    </div>
+                    <div class = "statBack">
+                        <div class = "statFront" id = "RecentHistoryFront"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "containerAchievements">
+            <div class = "text">Достижения</div>
+                <div class = "achievementCard">
+                    <div class = "achievementCardImg" id = "achievementFirst">
+                        <div class = "achievementblock" id = "blockFirst"></div>
+                    </div>
+                    <div class = "achievementCardImg" id = "achievementComplete">
+                        <div class = "achievementblock" id = "blockComplete"></div>
+                    </div>
+                    <div class = "achievementCardImg" id = "achievementAllPersons">
+                        <div class = "achievementblock" id = "blockAllPersons"></div>
+                    </div>
+                    <div class = "achievementCardImg" id = "achievementGame">
+                        <div class = "achievementblock" id = "blockGame"></div>
+                    </div>
+                    <div class = "achievementCardImg" id = "achievementMaster">
+                        <div class = "achievementblock" id = "blockMaster"></div>
+                    </div>
+                </div>
+            <div id = "achievementHint">Нажмите на иконку, чтобы увидеть подробности</div>
+        </div>
+        <div id = "menu">
+             <div class = "buttonMenu" id = "buttonDuel">
+                  <div class = "imgMenu" id = "imgDuel"></div>Дуэль
+             </div>
+            <div class = "buttonMenu" id = "buttonPersons">
+                 <div class = "imgMenu" id = "imgPersons"></div>Персонажи
+            </div>
+            <div class = "buttonMenu" id = "buttonStatistic">
+                <div class = "imgMenu" id = "imgStat"></div>Статистика
+                </div>
+            <div class = "buttonMenu" id = "buttonOptions">
+                <div class = "imgMenu" id = "imgOption"></div>Настройки
+            </div>
+        </div>
+        <dialog id = "windowUpAchievement">
+            <div id = "titleAchievement"></div>
+            <div id = "achievementImg"></div>
+            <div id="achievementText"></div>
+            <div id="achievementTextStatus"></div>
+            <div id="buttonClose">Закрыть</div>
+        </dialog>
+
+        <div id="cookieNotification">
+            <div id="cookieNotificationHeader">Мы используем Яндекс Метрику</div>
+            <div id="cookieNotificationBody">
+                <a id="more">Подробнее</a>
+            </div>
+            <button id="cookieButtonAgree">Я согласен</button>
+        </div>
+
+    </div>
+    <script src = "../script/cookieAlert.js"></script>
+    <script src = "../script/statistics.js"></script>
+</body>
+</html>

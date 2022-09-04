@@ -1,0 +1,315 @@
+@font-face {
+    font-family: fontText; 
+    src: url("../font/Roboto-Regular.ttf"); 
+}
+
+@font-face {
+    font-family: fontButton; 
+    src: url("../font/Roboto-Medium.ttf");
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: fontText;
+    background-color:#EFEFF1;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    min-height: 600px;
+    max-width:500px;
+    background-color: white;
+    color: #515151;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    user-select: none;
+}
+
+/* основная часть */
+#containerStars{
+    background:white;
+    text-align: center;
+    max-width: 500px;
+    font-size: 1.2em;
+    height: 30px;
+    background-color: #6DB0FF;
+    color: white;
+}
+
+.containerCharacters{
+    height: 41%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.text {
+    font-family: fontButton;
+    border-bottom: 1px solid #EBEBEB;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 5px auto;
+}
+
+.choosePerson {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+.avatar {
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    margin: auto;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.checkAvatar {
+    margin-top: 23px;
+    height: 22px;
+    width: 22px;
+    background-size: cover;
+}
+
+/* аватары персонажей */
+#Donskoy {
+   background-image: url(../images/avatars/a_hero.png);
+}
+
+#Petr1{
+    background-image: url(../images/avatars/a_hero4.png);
+}
+
+#Alexander1{
+    background-image: url(../images/avatars/a_hero2.png);
+}
+
+#Stalin {
+    background-image: url(../images/avatars/a_hero3.png);
+}
+
+#Mamai {
+    background-image: url(../images/avatars/a_enemy.png);
+}
+
+#Karl12{
+    background-image: url(../images/avatars/a_enemy4.png);
+}
+
+#Napoleon{
+    background-image: url(../images/avatars/a_enemy2.png);
+}
+ 
+ #Hitler {
+    background-image: url(../images/avatars/a_enemy3.png);
+}
+
+/* карточка персонажа */
+.containerPerson {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+.name {
+    height: 20%;
+    font-size: 1.4em;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #a8a8a8;
+    width: 100%;
+    background-size: cover;
+}
+
+#hero {
+    width:185px;
+    height: 185px;
+    background-size: cover;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#enemy{
+    width: 185px;
+    height: 185px;
+    background-size: cover;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.personLvl{
+    font-size: 1.1em;
+    text-align: center;
+    width: 98%;
+    padding: 1%;
+    border-radius: 15px;
+    color: white;
+    margin: auto;
+}
+
+.heart{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-image: url(../images/icons/heart.svg);
+}
+
+.explosion{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-image: url(../images/icons/explosion.svg);
+}
+
+.containerText {
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+}
+
+.characterParameter {
+    font-size: 1.07em;
+    margin: auto;
+    width: 80%;
+}
+
+.containerStats{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+}
+
+/* меню */
+#menu {
+    background-color:white;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    box-shadow: 0px -3px 15px rgb(230, 230, 230);
+}
+
+.buttonMenu {
+    color: #6DB0FF;
+    height: 65px;
+    width: 65px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgMenu{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin: auto;
+}
+#testshadow{
+    box-shadow: 0px 5px 10px rgb(109 176 255);
+}
+#imgDuel{
+    background-image: url(../images/icons/swordsDisable.svg);
+}
+#imgDuel:hover{
+    background-image: url(../images/icons/swords.svg);
+}
+#imgPersons{
+    background-image: url(../images/icons/persons.svg);
+}
+#imgStat{
+    background-image: url(../images/icons/statisticsDisable.svg);
+}
+#imgStat:hover{
+    background-image: url(../images/icons/statistics.svg);
+}
+#imgOption{
+    background-image: url(../images/icons/optionDisable.svg);
+}
+#imgOption:hover{
+    background-image: url(../images/icons/option.svg);
+}
+
+/* изменение элементов для разных разрешений экрана */
+@media (max-height: 680px) {
+    #hero,  #enemy {
+        width:160px;
+        height: 160px;
+    }
+    .avatar{
+        height: 35px;
+        width: 35px;
+    }
+    .name{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 355px) {
+    .checkAvatar{
+        height: 20px;
+        width: 20px;
+        margin-top: 13px;
+    }
+    #hero, #enemy {
+        width:150px;
+        height: 150px;
+    }
+    .containerStats{
+        width:150px;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 356px) and (max-width: 479px){
+    #hero, #enemy {
+        width:165px;
+        height: 165px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    #hero, #enemy{
+        width: 175px;
+        height: 175px;
+    }
+    .avatar{
+        width: 40px;
+        height: 40px;
+    }
+    .checkAvatar{
+        margin-top: 17px;
+    }
+}
+
+@media (min-height: 2160px) {
+    .wrapper {
+        height: 1600px;
+    }
+}

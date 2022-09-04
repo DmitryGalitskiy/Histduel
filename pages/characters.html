@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Историческая дуэль</title>
+  <link href="../styles/cookieAlert.css" type="text/css" rel="stylesheet">
+  <link href="../styles/characters.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+ </head>
+<body>
+    <div class = 'wrapper'>
+        <div id= "containerStars"></div>
+        <div class = "containerCharacters">
+            <div class = "text">Выберите героя</div>
+            <div class = "choosePerson">
+                <div class = "avatar" id = "Donskoy">
+                    <div class = "checkAvatar" id = "checkDonskoy"></div>
+                </div>
+                <div class = "avatar" id = "Petr1">
+                    <div class = "checkAvatar" id = "checkPetr1"></div>
+                </div>
+                <div class = "avatar" id = "Alexander1">
+                    <div class = "checkAvatar" id = "checkAlexander1"></div>
+                </div>
+                <div class = "avatar" id = "Stalin">
+                    <div class = "checkAvatar" id = "checkStalin"></div>
+                </div>
+            </div>
+            <div class = "containerPerson">
+                <div id = "hero"></div>
+                <div class = "containerStats">
+                    <div class = "name" id = "heroName"></div>
+                    <div class = "containerText">
+                        <div class = "heart"></div>
+                        <div class = "characterParameter" id = "heroHealth"></div>
+                    </div>
+                    <div class = "containerText">
+                        <div class = "explosion"></div>
+                        <div class = "characterParameter" id = "heroDamage"></div>
+                    </div>
+                    <div class = "personLvl" id = "heroLvl"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "containerCharacters" id="containerBottom">
+            <div class = "text">Выберите противника</div>
+            <div class = "choosePerson">
+                <div class = "avatar" id = "Mamai">
+                    <div class = "checkAvatar" id = "checkMamai"></div>
+                </div>
+                <div class = "avatar" id = "Karl12">
+                    <div class = "checkAvatar" id = "checkKarl12"></div>
+                </div>
+                <div class = "avatar" id = "Napoleon">
+                    <div class = "checkAvatar" id = "checkNapoleon"></div>
+                </div>
+                <div class = "avatar" id = "Hitler">
+                    <div class = "checkAvatar" id = "checkHitler"></div>
+                </div>
+            </div>
+                <div class = "containerPerson">
+                <div id = "enemy"></div>
+                <div class = "containerStats">
+                    <div class = "name" id = "enemyName"></div>
+                    <div class = "containerText">
+                        <div class = "heart"></div>
+                        <div class = "characterParameter" id = "enemyHealth"></div>
+                    </div>
+                    <div class = "containerText">
+                        <div class = "explosion"></div>
+                        <div class = "characterParameter" id = "enemyDamage"></div>
+                    </div>
+                    <div class = "personLvl" id = "enemyLvl"></div>
+                </div>
+            </div>
+        </div>
+        <div id = "menu">
+            <div class = "buttonMenu" id = "buttonDuel">
+                <div class = "imgMenu" id = "imgDuel"></div>Дуэль
+            </div>
+            <div class = "buttonMenu" id = "buttonPersons">
+                <div class = "imgMenu" id = "imgPersons"></div>Персонажи
+            </div>
+            <div class = "buttonMenu" id = "buttonStatistic">
+                <div class = "imgMenu" id = "imgStat"></div>Статистика
+            </div>
+            <div class = "buttonMenu" id = "buttonOptions">
+                <div class = "imgMenu" id = "imgOption"></div>Настройки
+            </div>
+        </div>
+        
+        <div id="cookieNotification">
+            <div id="cookieNotificationHeader">Мы используем Яндекс Метрику</div>
+            <div id="cookieNotificationBody">
+                <a id="more">Подробнее</a>
+            </div>
+            <button id="cookieButtonAgree">Я согласен</button>
+        </div>
+
+    </div>
+    <script src = "../script/cookieAlert.js"></script>
+    <script src = "../script/characters.js"></script>
+</body>
+</html>
