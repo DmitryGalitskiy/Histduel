@@ -40,7 +40,7 @@ body {
 }
 
 .battle{
-    height: 45%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     background-image: url(../images/background.png);
@@ -117,7 +117,7 @@ body {
 .hero{
     width: 200px;
     max-height: 200px;
-    background-image: url(../images/hero.png);
+    background-image: url(../images/Donskoy.png);
     background-size: cover;
 }
 
@@ -125,7 +125,7 @@ body {
     margin-left: auto;
     width: 200px;
     height: 200px;
-    background-image: url(../images/enemy.png);
+    background-image: url(../images/Mamai.png);
     background-size: cover;
 }
 
@@ -140,20 +140,32 @@ body {
 }
 
 /* вопрос и ответы */
-#question{
+#questionWrapper{
     font-family: fontButton;
-    height: 16%;
-    padding: 1.5em 20px 1.5em;
+    height: 20%;
     text-align: center;
     font-size: 1.1em;
+    display: table; /* нужно для размещения текста по центру, поведение таблицы */
 }
 
-.answer{
-    height: 8.75%;
-    padding-top: 2em;
+#question {
+    display: table-cell; /* нужно для размещения текста по центру, поведение ячейки таблицы */
+    vertical-align: middle; /* вертикальное позиционирование строчных ячеек таблицы */
+    padding: 0px 10px;
+}
+
+.answerWrapper{
+    height: 10%;
     text-align: center;
     border-top: 1px solid #C3C3C3;
     cursor: pointer;
+    display: table;
+}
+
+.answer{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 5px;
 }
 
 /* кнопка паузы */
@@ -296,9 +308,15 @@ dialog::backdrop {
 }
 
 /* изменение элементов для разных разрешений экрана */
+@media (max-width: 359px) {
+    .answer, #question {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 360px) {
     .liveBack, .liveNumber {
-        width: 140px;
+        width: 130px;
     }
     .hero, .enemy, .hit {
         width: 140px;
