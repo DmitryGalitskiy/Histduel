@@ -13,8 +13,8 @@ const currentHero = JSON.parse (localStorage.getItem ('currentHeroSaved')) || {h
     ['Древность и Средневековье (ОГЭ)', 'Новое время (ОГЭ)', 'Древность и Средневековье (ЕГЭ)',
      'Новое время (ЕГЭ)', 'Новейшая история (ЕГЭ)'], // массив с выбранными тегами
       darkTheme = localStorage.getItem ('darkThemeSaved') || "disable", // темная тема
-      colorRight = '#2dd636',
-      colorWrong = '#fa472f',
+      colorRight = '#18c927',
+      colorWrong = '#f54531',
       time = 1200; // время смены вопроса
 
 let healthHero = currentHero.health,
