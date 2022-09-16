@@ -124,25 +124,18 @@ body {
     font-size: 1.6em;
 }
 
-.button{
+#Feedback{
     font-family: fontButton; 
-    background-color: #0077FF;
-    line-height: 50px;
+    background-color: #FF6736;
+    line-height: 40px;
     margin: auto;
     width: 70%;
-    height: 50px;
+    height: 40px;
     text-align: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
     border-radius: 15px;
-}
-
-#Feedback{
-    background-color: #FF6736;
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
 }
 
 /* окно подтверждения очистки данных */
