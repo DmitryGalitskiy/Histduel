@@ -59,11 +59,7 @@ function drawCheckRightAnswer () {
 drawCheckDarkTheme ();
 drawCheckRightAnswer ();
 
-// кнопки обратной связи
-get("VK").onclick = function () {
-  window.open ('https://vk.com/histduel');
-};
-
+// кнопка обратной связи
 get("Feedback").onclick = function () {
   window.open ('https://forms.yandex.ru/u/62ffd1acc64c2845e41e0e4a/');
 };
