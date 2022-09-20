@@ -142,6 +142,7 @@ body {
 /* вопрос и ответы */
 #questionWrapper{
     font-family: fontButton;
+    width: 100%;
     height: 20%;
     text-align: center;
     font-size: 1.1em;
@@ -156,6 +157,7 @@ body {
 
 .answerWrapper{
     height: 10%;
+    width: 100%;
     text-align: center;
     border-top: 1px solid #C3C3C3;
     cursor: pointer;
