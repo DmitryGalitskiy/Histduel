@@ -59,11 +59,6 @@ function drawCheckRightAnswer () {
 drawCheckDarkTheme ();
 drawCheckRightAnswer ();
 
-// кнопка обратной связи
-get("Feedback").onclick = function () {
-  window.open ('https://forms.yandex.ru/u/62ffd1acc64c2845e41e0e4a/');
-};
-
 // кнопки меню
 get("buttonDuel").onclick = function () {
   location.href = '../index.html';

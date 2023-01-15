@@ -40,7 +40,7 @@ body {
 
 /* основная часть */
 #containerButton{
-    height: 170px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -61,7 +61,7 @@ body {
     width: 300px;
     height: 25px;
     text-align: center;
-    margin: auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: row;
 }
@@ -99,43 +99,7 @@ body {
     cursor: pointer;
     border-radius: 15px;
     padding: 5px;
-    margin: auto;
-}
-
-#containerOptions{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-#textOption{
-    text-align: center;
-    line-height: 1.5em;
-    padding: 10px 20px;
-    margin: auto;
-}
-
-#textEmail{
-    font-family: fontButton; 
-    user-select: text;
-    text-align: center;
-    font-size: 1.6em;
-}
-
-#Feedback{
-    font-family: fontButton; 
-    background-color: #FF6736;
-    line-height: 40px;
-    margin: auto;
-    width: 70%;
-    height: 40px;
-    text-align: center;
-    color: white;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 15px;
+    margin: 5% auto;
 }
 
 /* окно подтверждения очистки данных */
